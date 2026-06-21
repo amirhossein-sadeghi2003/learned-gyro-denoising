@@ -1,0 +1,23 @@
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# public datasets are large; do not commit raw/processed data
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# model weights / checkpoints
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/
