@@ -21,3 +21,11 @@ checkpoints/
 .DS_Store
 .idea/
 .vscode/
+
+# raw EuRoC sequence data lives under data/<seq>/; never commit it
+data/*/
+!data/raw/
+!data/processed/
+# track only the metric CSVs the README cites, not everything in results/
+results/*
+!results/baseline_segment_drift.csv
